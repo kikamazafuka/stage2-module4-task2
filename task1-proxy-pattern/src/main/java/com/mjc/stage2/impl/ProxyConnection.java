@@ -18,7 +18,6 @@ public class ProxyConnection implements Connection {
 
     @Override
     public void close() {
-        connectionPool.releaseConnection(this);
     }
 
     @Override
