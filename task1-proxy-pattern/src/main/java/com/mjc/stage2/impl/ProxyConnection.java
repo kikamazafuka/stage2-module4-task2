@@ -21,7 +21,6 @@ public class ProxyConnection implements Connection {
             connectionPool.releaseConnection(this);
         }
     }
-
     @Override
     public boolean isClosed() {
         return realConnection.isClosed();
